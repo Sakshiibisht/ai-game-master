@@ -59,6 +59,10 @@ public class World {
         this.theme = theme;
     }
 
+    private String capitalCity;
+    public String getCapitalCity(){ return capitalCity; }
+    public void setCapitalCity(String capitalCity) { this.capitalCity = capitalCity; }
+
     public String getMagicLevel() {
         return magicLevel;
     }
