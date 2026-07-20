@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/npcs")
 public class NPCController {
-
     private final NPCService npcService;
 
     public NPCController(NPCService npcService) {

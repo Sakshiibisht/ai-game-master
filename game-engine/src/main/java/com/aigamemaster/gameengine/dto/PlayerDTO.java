@@ -1,8 +1,13 @@
 package com.aigamemaster.gameengine.dto;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public class PlayerDTO {
+    @NotBlank(message = "Player name is required")
     private String playerName;
+    @NotBlank(message = "Player class is required")
     private String playerClass;
+    @NotNull(message = "World ID is required")
     private Long worldId;
     public PlayerDTO(){
 

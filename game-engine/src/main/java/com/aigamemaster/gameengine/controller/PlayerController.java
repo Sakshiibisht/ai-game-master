@@ -4,6 +4,7 @@ import com.aigamemaster.gameengine.dto.PlayerDTO;
 import com.aigamemaster.gameengine.entity.Player;
 import com.aigamemaster.gameengine.service.PlayerService;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/players")
@@ -16,7 +17,7 @@ public class PlayerController {
     }
 
     @PostMapping
-    public Player createPlayer(@RequestBody PlayerDTO playerDTO) {
+    public Player createPlayer(@RequestBody @Valid PlayerDTO playerDTO) {
         return playerService.createPlayer(playerDTO);
     }
 }
