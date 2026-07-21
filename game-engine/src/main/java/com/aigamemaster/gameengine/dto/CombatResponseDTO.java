@@ -77,4 +77,25 @@ public class CombatResponseDTO {
     public void setMessage(String message) {
         this.message = message;
     }
+    private Boolean criticalHit;
+    public Boolean getCriticalHit(){
+        return criticalHit;
+    }
+    public void setCriticalHit(Boolean criticalHit){
+        this.criticalHit = criticalHit;
+    }
+    private Boolean potionUsed;
+    public Boolean getPotionUsed(){
+        return potionUsed;
+    }
+    public void setPotionUsed(Boolean potionUsed){
+        this.potionUsed = potionUsed;
+    }
+    private Integer remainingPotions;
+    public Integer getRemainingPotions(){
+        return remainingPotions;
+    }
+    public void setRemainingPotions(Integer remainingPotions){
+        this.remainingPotions = remainingPotions;
+    }
 }
